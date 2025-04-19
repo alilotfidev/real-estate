@@ -1,1 +1,11 @@
 @import "tailwindcss";
+
+
+:root {
+  --grey-color: #F7F8F8;
+  --black-color: #050F27;
+}
+
+.btn {
+  @apply text-lg font-bold bg-[#050F27] text-white py-4 px-2 rounded-[26px];
+}
