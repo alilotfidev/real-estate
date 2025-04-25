@@ -1,9 +1,17 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Navbar() {
   return (
     <nav className="flex flex-col md:flex-row items-center p-4 md:p-6 bg-[#F7F8F8] rounded-3xl md:rounded-[128px] m-2 md:m-8 relative">
-      <div className="text-xl font-bold mb-4 md:mb-0">Real Estate</div>
+      <div className="mb-4 md:mb-0">
+        <Image
+          src="/images/logo-black.png"
+          alt="real estate"
+          width={96}
+          height={40}
+        />
+      </div>
 
       <div className="flex flex-row gap-4 md:space-x-6 md:mx-auto mb-4 md:mb-0">
         <Link href="#" className="hover:text-gray-600">

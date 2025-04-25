@@ -1,4 +1,6 @@
 import Link from "next/link";
+import Image from "next/image";
+
 export default function Footer() {
   return (
     <footer className="rounded-3xl bg-[#050F27] text-white px-4 py-10 sm:px-8 sm:py-16 md:px-16 md:py-20 xl:px-32 xl:py-24 mx-2 sm:mx-4 md:mx-8 mt-24 md:mt-48 mb-4 md:mb-8">
@@ -18,8 +20,13 @@ export default function Footer() {
       </div>
 
       <div className="flex flex-col md:flex-row md:justify-between md:items-center p-4 sm:p-6 bg-[#ffffff05] rounded-3xl mt-12 md:mt-32 gap-4 md:gap-0">
-        <div className="text-lg sm:text-xl font-bold text-center md:text-left">
-          Real Estate
+        <div>
+          <Image
+            src="/images/logo-white.png"
+            alt="real estate"
+            width={96}
+            height={40}
+          />
         </div>
         <div className="flex flex-wrap justify-center md:justify-end space-x-4 sm:space-x-6 font-light text-base sm:text-lg">
           <Link href="#" className="hover:text-gray-400 transition-colors">
