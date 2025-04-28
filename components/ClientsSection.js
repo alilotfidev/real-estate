@@ -1,4 +1,5 @@
 import Image from "next/image";
+import TextReveal from "./TextReveal";
 
 export default function ClientsSection() {
   return (
@@ -13,18 +14,27 @@ export default function ClientsSection() {
       </div>
       <div className="content col-span-1 md:col-span-6 bg-[#F7F8F8] rounded-[40px] md:rounded-[120px] flex flex-col p-8 md:p-20 px-6 md:px-28 gap-6 md:gap-12">
         <div className="w-fit lg:ml-auto">
-          <p className="font-medium text-sm">Satisfied Clients</p>
-          <p className="font-bold text-4xl md:text-7xl">8.4M+</p>
+          <p className="font-medium text-sm">
+            <TextReveal triggerOnScroll={true}>Satisfied Clients</TextReveal>
+          </p>
+          <p className="font-bold text-4xl md:text-7xl">
+            <TextReveal triggerOnScroll={true}>8.4M+</TextReveal>
+          </p>
         </div>
 
         <p className="font-semibold text-3xl md:text-6xl">
-          We can bring to life everything you've ever envisioned and dreamed of
-          – your ideals and desires are our creations.
+          <TextReveal triggerOnScroll={true}>
+            We can bring to life everything you've ever envisioned and dreamed
+            of – your ideals and desires are our creations.
+          </TextReveal>
         </p>
         <p className="font-light text-sm max-w-full md:max-w-3/4">
-          Our purpose is to transform your wildest dreams into reality.
-          Regardless of how unconventional your vision may be, we possess the
-          capability to craft your dream home, fulfilling your every desire.
+          <TextReveal triggerOnScroll={true}>
+            {" "}
+            Our purpose is to transform your wildest dreams into reality.
+            Regardless of how unconventional your vision may be, we possess the
+            capability to craft your dream home, fulfilling your every desire.
+          </TextReveal>
         </p>
         <button className="btn w-full xl:w-1/4 !font-normal !text-base">
           Start Exploring

@@ -1,8 +1,10 @@
+import TextReveal from "./TextReveal";
+
 export default function CommentsSection() {
   return (
     <div className="rounded-[40px] md:rounded-[80px] lg:rounded-[120px] bg-[#F7F8F8] p-4 md:p-10 lg:p-20 mx-2 md:mx-8 my-12 md:my-24 lg:my-48 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-10 lg:gap-16">
       <h1 className="col-span-1 md:col-span-2 text-3xl md:text-5xl lg:text-8xl text-pretty font-semibold">
-        What our customers say
+        <TextReveal triggerOnScroll={true}>What our customers say</TextReveal>
       </h1>
       {[1, 2, 3, 4].map((item) => (
         <div

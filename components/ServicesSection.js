@@ -1,3 +1,5 @@
+import TextReveal from "./TextReveal";
+
 export default function ServicesSection() {
   const services = [
     {
@@ -19,7 +21,7 @@ export default function ServicesSection() {
   return (
     <div className="rounded-3xl md:rounded-[80px] xl:rounded-[120px] bg-[#F7F8F8] px-4 py-10 md:p-16 xl:p-20 mx-2 md:mx-8 my-16 md:my-32 xl:my-48 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 md:gap-12 xl:gap-16">
       <h1 className="col-span-1 md:col-span-2 xl:col-span-3 text-4xl md:text-6xl xl:text-8xl font-semibold text-pretty mb-8 md:mb-12 xl:mb-0">
-        Services
+        <TextReveal triggerOnScroll={true}>Services</TextReveal>
       </h1>
       {services.map((item, index) => (
         <div
